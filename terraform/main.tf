@@ -17,8 +17,8 @@ resource "aws_instance" "web_app" {
   ebs_block_device {
     device_name = "my_data"
     volume_type = "io1"
-    volume_size = 3000
-    iops        = 1000                      # <<<<< Try changing this to 10000 to compare costs
+    volume_size = 5000
+    iops        = 3000                      # <<<<< Try changing this to 10000 to compare costs
   }
 }
 
